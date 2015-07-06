@@ -1,1 +1,40 @@
 /*my dev scss file*/
+
+
+
+//removes all padding and margins
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+background-color: hsla(180, 50%, 50%, 1);
+}
+
+#navLinks{
+	over-flow: hidden;  
+}
+#navLinks ul {
+	width: 100%;
+}
+
+#navLinks ul li {
+	width: 100%;
+	text-align: center;
+}
+.hide{
+	height: 0;
+	-webkit-transition:height 1s;
+	transition:height 1s;
+}
+.show {
+	height: 100px;
+	-webkit-transition:height 1s;
+		transition:height 1s;
+}
+@media (min-width: 768px){
+	#navButton{
+		visibility: hidden;
+	}
+}
